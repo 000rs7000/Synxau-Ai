@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-base-main: var(--bg-main);
+  --color-base-nav: var(--bg-nav);
+  --color-base-hover: var(--bg-hover);
+  --color-base-subtle: var(--bg-subtle);
+  --color-base-border: var(--border-main);
+  --color-base-primary: var(--primary-main);
+  --color-base-primary-hover: var(--primary-hover);
+
+  --color-text-main: var(--text-primary);
+  --color-text-subtle: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-invert: var(--text-invert);
+}
+
+:root {
+  --bg-main: #fcfcfb;
+  --bg-nav: #ffffff;
+  --bg-hover: #f4f4f2;
+  --bg-subtle: #ececec;
+  --primary-main: #000000;
+  --primary-hover: #222222;
+  
+  --text-primary: #1d1d1b;
+  --text-secondary: #4a4a46;
+  --text-muted: #9c9c98;
+  --text-invert: #ffffff;
+
+  --border-main: #ececec;
+  --border-dark: #dcdcdc;
+}
+
+.dark {
+  --bg-main: #18181b;
+  --bg-nav: #09090b;
+  --bg-hover: #27272a;
+  --bg-subtle: #3f3f46;
+  --primary-main: #ffffff;
+  --primary-hover: #e4e4e7;
+  
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --text-invert: #000000;
+
+  --border-main: #27272a;
+  --border-dark: #3f3f46;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
